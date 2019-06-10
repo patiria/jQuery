@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<h2>Formularz zamówienia pizzy:</h2>
+	<p>Proszę o uzupełnienie wszystkich pól formularza.</p>
+	<form action="/action_page.php">
+		<!-- pierwsze dane formularza -->
+		<fieldset>
+			<label for="firstname" class="pola">Imię:
+				<input type="text" name="imię">
+			</label><br><br>
+			<label for="secondname" class="pola">Nazwisko:
+				<input type="text" name="nazwisko"><br><br>
+			</label><br><br>
+			<label for="street" class="pola">Ulica:
+				<input type="text" name="ulica"></label>
+			<label for="number" class="pola">Numer:
+				<input type="text" name="numer"></label><br><br>
+			<label for="code" class="pola">Kod pocztowy:
+				<input type="text" name="kod"></label>
+			<label for="city" class="pola">Miasto:
+				<input type="text" name="miasto"></label><br><br>
+		</fieldset>
+<!-- wybor pizzy -->
+		<fieldset>
+			<label for="pizza" class="pola">Pizza:
+				<select name="pizza1" id="choice">Wybór pizzy
+					<option value="1">Margerita</option>	
+					<option value="2">Pepperoni</option>
+					<option value="3">Vege</option>
+					<option value="4">4 Sery</option>
+				</select>
+				<span id="price">0 PLN</span><br><br>
+				<input type="button" name="click" value="Wybierz"></label><br><br>
+		</fieldset>
+		<!-- wybor sosu -->
+		<fieldset>
+			<label for="sos" class="pola">Sos do wyboru:
+				<br>
+				<input type="checkbox" name="sos" value="sos pomidorowy">sos pomidorowy<br>
+				<input type="checkbox" name="sos" value="sos czosnkowy">sos czosnkowy
+			</label><br><br>
+		</fieldset>
+		<!-- zgoda -->
+		<fieldset>
+			<label for="zgoda" class="pola">Zgoda na RODO itp.</label>
+			<input type="checkbox" name="zgoda"><br>
+			<br><br>
+		</fieldset><br><br>
+		<!-- przycisk wyslij -->
+		<input type="button" name="click" value="Zamów">
+		<label for="agree" class="pola"></label><br>
+
+
+		<!-- Skrypt jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+		<!-- Custom Scripts	-->
+		<script src="js/2-warsztaty.js"></script>
+</body>
+
+</html>
